@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio</title>
+
+    <!-- icon-link -->
+    <script
+      src="https://kit.fontawesome.com/9b59700d08.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css-file -->
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-gray-900 text-white">
+    <header>
+      <nav
+        class="w-full backdrop-blur-lg fixed top-0 flex justify-between items-center py-6 px-8"
+      >
+        <!-- logo -->
+        <h2 class="flex-1 cursor-pointer text-3xl font-bold">Utkarsh.</h2>
+
+        <!-- nav menu -->
+        <div
+          class="hidden flex-none md:block md:text-1.5xl lg:text-2xl font-semibold"
+        >
+          <a
+            class="cursor-pointer hover:md:text-2xl hover:lg:text-3xl active:underline underline-offset-4 transition-all duration-300 px-6 py-1"
+            href="#hero-section"
+            >Home</a
+          >
+          <a
+            class="cursor-pointer hover:md:text-2xl hover:lg:text-3xl active:underline underline-offset-4 transition-all duration-300 px-6 py-1"
+            href="#about-me-section"
+            >About me</a
+          >
+          <a
+            class="cursor-pointer hover:md:text-2xl hover:lg:text-3xl active:underline underline-offset-4 transition-all duration-300 px-6 py-1"
+            href="#skills-section"
+            >Skills</a
+          >
+          <a
+            class="cursor-pointer hover:md:text-2xl hover:lg:text-3xl active:underline underline-offset-4 transition-all duration-300 px-6 py-1"
+            href="#"
+            >Projects</a
+          >
+          <a
+            class="cursor-pointer hover:md:text-2xl hover:lg:text-3xl active:underline underline-offset-4 transition-all duration-300 px-6 py-1"
+            href="#contact-section"
+            >Contact</a
+          >
+        </div>
+
+        <!-- mobile-view -->
+        <button class="md:hidden" onclick="toggleNav()">
+          <i class="text-4xl fa-solid fa-bars"></i>
+        </button>
+
+        <!-- mobile menu -->
+        <div
+          id="fixed"
+          class="hidden fixed inset-0 h-screen w-full bg-gray-900"
+        >
+          <div class="flex justify-between items-center p-6">
+            <!-- logo -->
+            <h2 class="text-4xl font-bold">Utkarsh.</h2>
+
+            <!-- close button -->
+            <button onclick="toggleNav()">
+              <i class="text-4xl fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <!-- nav-menu -->
+          <div class="p-20 pt-10 text-3xl font-bold text-center">
+            <a href="#hero-section" class="block mt-8">Home</a>
+            <a href="#about-me-section" class="block mt-8">About me</a>
+            <a href="#skills-section" class="block mt-8">Skills</a>
+            <a href="#" class="block mt-8">Projects</a>
+            <a href="#contact-section" class="block mt-8">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero section -->
+      <section id="hero-section" class="flex">
+        <!-- profile image -->
+        <div class="hidden md:block w-21/50 flex-initial lg:h-svh">
+          <img
+            class="md:mt-10 md:size-100 lg:size-full object-cover"
+            src="./assets/home-img.png"
+            alt="profile image"
+          />
+        </div>
+        <!-- hero text -->
+        <div class="flex-1 lg:h-svh mt-30 lg:mt-10">
+          <p
+            id="typewriter"
+            class="text-1xl md:text-2xl font-semibold pt:30 md:pt-20 lg:pt-70 px-20"
+          ></p>
+          <h1
+            class="text-4xl md:text-5xl lg:text-8xl font-extrabold mt-3 px-20"
+          >
+            Hi, I'm Utkarsh From
+            <span
+              class="bg-gradient-to-r from-orange-400 via-white to-green-500 text-transparent bg-clip-text"
+              >India</span
+            >
+          </h1>
+        </div>
+      </section>
+
+      <!-- about me section -->
+      <section id="about-me-section" class="mt-15 lg:mt-30">
+        <h2
+          class="px-10 text-2xl md:text-3xl lg:text-4xl font-bold underline underline-offset-4"
+        >
+          About Me
+        </h2>
+
+        <div class="block md:flex md:justify-around mt-10 md:mt-8">
+          <div class="md:hidden lg:block">
+            <img
+              class="size-3/5 m-auto md:m-0 lg:size-fit lg:pl-10 lg:pt-10"
+              src="./assets/profile-pic (1).png"
+              alt="profile-pic"
+            />
+          </div>
+          <div class="mt-10 md:mt-0 lg:py-10">
+            <p class="text-lg text-justify md:text-2xl px-10">
+              Hi, I'm Utkarsh. I have a degree in computer science from MDU ,
+              and I am currently learning backend development at Masai School.
+              My main skills include Node.js, JavaScript, and Express.js.
+              <br />I enjoy building APIs, working on server-side applications,
+              and solving problems. I am also exploring new technologies like
+              Generative AI to create better and more scalable solutions. I like
+              working with teams, sharing ideas, and learning new things. I aim
+              to work on projects that make a difference and bring value.
+              <br />Let’s create something great together!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills section -->
+      <section id="skills-section" class="mt-15 lg:mt-30">
+        <h2
+          class="px-10 text-2xl md:text-3xl lg:text-4xl font-bold underline underline-offset-4"
+        >
+          Skills
+        </h2>
+
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-2 mt-10"
+        >
+          <div class="m-auto w-30 h-30 lg:w-50 lg:h-50">
+            <img class="size-full" src="./assets/logos/html.png" alt="html" />
+          </div>
+          <div class="m-auto w-30 h-30 lg:w-50 lg:h-50">
+            <img class="size-full" src="./assets/logos/css.png" alt="css" />
+          </div>
+          <div class="m-auto w-30 h-30 lg:w-50 lg:h-50">
+            <img class="size-full" src="./assets/logos/js.png" alt="js" />
+          </div>
+          <div class="m-auto w-30 h-30 lg:w-50 lg:h-50">
+            <img
+              class="size-full"
+              src="./assets/logos/nodejs.png"
+              alt="nodejs"
+            />
+          </div>
+          <div class="m-auto w-30 h-30 lg:w-50 lg:h-50 py-5 lg:py-10">
+            <img
+              class="size-full"
+              src="./assets/logos/express.png"
+              alt="expresjs"
+            />
+          </div>
+          <div class="m-auto w-30 h-30 lg:w-50 lg:h-50">
+            <img
+              class="size-full"
+              src="./assets/logos/mongoDB.png"
+              alt="mongoDB"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section id="contact-section" class="mt-15 lg:mt-30">
+        <h2
+          class="px-10 text-2xl md:text-3xl lg:text-4xl font-bold underline underline-offset-4"
+        >
+          Contact
+        </h2>
+
+        <div
+          class="flex flex-col lg:flex-row justify-center lg:items-center gap-4 px-10"
+        >
+          <div
+            class="flex-1 mt-10 md:mt-8 text-base lg:text-lg font-bold lg:pl-20"
+          >
+            <h3 class="mt-5">
+              <i class="mr-3 fa-regular fa-envelope"></i>
+              utkarsh.singh144493@gmail.com
+            </h3>
+            <h3 class="mt-5">
+              <i class="mr-3 fa-solid fa-phone"></i> +91 7503636093
+            </h3>
+            <h3 class="mt-5">
+              <i class="mr-3 fa-brands fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/ut-pro/" target="_blank"
+                >Utkarsh</a
+              >
+            </h3>
+            <h3 class="mt-5">
+              <i class="mr-3 fa-brands fa-github"></i>
+              <a href="https://github.com/ut-pro" target="_blank">ut-pro</a>
+            </h3>
+          </div>
+          <div class="flex-1 mt-10 md:mt-8 lg:px-30">
+            <form class="flex flex-col items-center border-2 rounded-2xl p-10">
+              <input
+                type="text"
+                placeholder="Name"
+                class="w-full h-10 mt-5 px-2"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="w-full h-10 mt-5 px-2"
+              />
+              <textarea
+                placeholder="Message"
+                class="w-full h-20 mt-5 px-2"
+              ></textarea>
+              <button
+                class="cursor-pointer w-50 h-10 mt-5 bg-gradient-to-r from-orange-400 via-white to-green-500 text-black font-bold rounded-2xl"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="mt-10 flex justify-center items-center h-20 bg-gray-600">
+        <p class="text-lg">Designed with ❤️ by Utkarsh.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
