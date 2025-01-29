@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PortFolio</title>
+    <title>Utkarsh.</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
 
     <!-- icon-link -->
     <script
@@ -14,7 +15,7 @@
     <!-- css-file -->
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="bg-gray-900 text-white">
+  <body class="bg-gray-900 text-white animate-fadeIn delay-500">
     <header>
       <nav
         class="w-full bg-white text-gray-900 fixed top-0 flex justify-between items-center py-6 px-8 rounded-b-2xl md:rounded-b-3xl"
@@ -43,7 +44,7 @@
           >
           <a
             class="cursor-pointer hover:md:text-2xl hover:lg:text-3xl active:underline underline-offset-4 transition-all duration-300 px-6 py-1"
-            href="#"
+            href="#projects-section"
             >Projects</a
           >
           <a
@@ -78,7 +79,7 @@
             <a href="#hero-section" class="block mt-8">Home</a>
             <a href="#about-me-section" class="block mt-8">About me</a>
             <a href="#skills-section" class="block mt-8">Skills</a>
-            <a href="#" class="block mt-8">Projects</a>
+            <a href="#projects-section" class="block mt-8">Projects</a>
             <a href="#contact-section" class="block mt-8">Contact</a>
           </div>
         </div>
@@ -87,7 +88,7 @@
 
     <main>
       <!-- hero section -->
-      <section id="hero-section" class="flex">
+      <section id="hero-section" class="flex js-show-on-scroll">
         <!-- profile image -->
         <div class="hidden md:block w-21/50 flex-initial lg:h-svh">
           <img
@@ -115,7 +116,7 @@
       </section>
 
       <!-- about me section -->
-      <section id="about-me-section" class="mt-15 lg:mt-30">
+      <section id="about-me-section" class="mt-15 lg:mt-30 js-show-on-scroll">
         <h2
           class="px-10 text-2xl md:text-3xl lg:text-4xl font-bold underline underline-offset-4"
         >
@@ -147,7 +148,7 @@
       </section>
 
       <!-- skills section -->
-      <section id="skills-section" class="mt-15 lg:mt-30">
+      <section id="skills-section" class="mt-15 lg:mt-30 js-show-on-scroll">
         <h2
           class="px-10 text-2xl md:text-3xl lg:text-4xl font-bold underline underline-offset-4"
         >
@@ -190,8 +191,79 @@
         </div>
       </section>
 
+      <!-- projects-section -->
+      <section id="projects-section" class="mt-15 lg:mt-30 js-show-on-scroll">
+        <h2
+          class="px-10 text-2xl md:text-3xl lg:text-4xl font-bold underline underline-offset-4"
+        >
+          Projects
+        </h2>
+
+        <div
+          class="flex flex-col items-center gap-10 mt-10 md:mt-15 mx-10 p-5 bg-white text-black rounded-2xl"
+        >
+          <div class="flex-1">
+            <img src="./assets/projects/JScript.png" alt="JScript_img" />
+          </div>
+          <div class="flex-2">
+            <h3 class="text-2xl font-semibold">
+              JScript – A Beginner-Friendly Programming Language & IDE
+            </h3>
+            <p class="text-lg mt-5">
+              JScript is a lightweight programming language designed for
+              simplicity and clarity, along with an easy-to-use Integrated
+              Development Environment (IDE). This project aims to help beginners
+              understand the basics of programming by providing a clean syntax,
+              an interactive editor, and beginner-friendly documentation.
+            </p>
+            <p class="text-lg font-semibold mt-3">Features:</p>
+            <ul class="list-disc list-outside ml-5">
+              <li>
+                <span class="font-semibold">Custom Programming Language –</span>
+                Supports variables, loops, conditionals, functions, and more.
+              </li>
+              <li>
+                <span class="font-semibold">Interactive IDE –</span> Syntax
+                highlighting, error detection, and an output console.
+              </li>
+              <li>
+                <span class="font-semibold"
+                  >Easy-to-Understand Documentation –</span
+                >
+                Helps users learn the language quickly.
+              </li>
+              <li>
+                <span class="font-semibold">Beginner-Friendly –</span> Designed
+                for those new to coding.
+              </li>
+            </ul>
+            <p class="text-lg font-semibold mt-3">
+              Tech Stack: HTML, CSS, JavaScript
+            </p>
+            <p
+              class="text-lg font-semibold mt-3 hover:underline underline-offset-4"
+            >
+              <i class="mr-2 fa-solid fa-link"></i>
+              <a
+                href="https://jscript-programming-language.netlify.app/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </p>
+            <p
+              class="text-lg font-semibold mt-3 hover:underline underline-offset-4"
+            >
+              <i class="mr-2 fa-brands fa-github"></i>
+              <a href="https://github.com/ut-pro/JScript" target="_blank"
+                >Files</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!-- contact section -->
-      <section id="contact-section" class="mt-15 lg:mt-30">
+      <section id="contact-section" class="mt-15 lg:mt-30 js-show-on-scroll">
         <h2
           class="px-10 text-2xl md:text-3xl lg:text-4xl font-bold underline underline-offset-4"
         >
@@ -206,10 +278,13 @@
           >
             <h3 class="mt-5">
               <i class="mr-3 fa-regular fa-envelope"></i>
-              utkarsh.singh144493@gmail.com
+              <a href="mailto:utkarsh.singh144493@gmail.com"
+                >utkarsh.singh144493@gmail.com</a
+              >
             </h3>
             <h3 class="mt-5">
-              <i class="mr-3 fa-solid fa-phone"></i> +91 7503636093
+              <i class="mr-3 fa-solid fa-phone"></i>
+              <a href="tel:+917503636093">+91 7503636093</a>
             </h3>
             <h3 class="mt-5">
               <i class="mr-3 fa-brands fa-linkedin"></i>
@@ -223,27 +298,42 @@
             </h3>
           </div>
           <div class="flex-1 mt-10 md:mt-8 lg:px-30">
-            <form class="flex flex-col items-center border-2 rounded-2xl p-10">
+            <form
+              name="submit-to-google-sheet"
+              class="flex flex-col items-center border-2 rounded-2xl p-10"
+            >
               <input
+                name="Name"
                 type="text"
                 placeholder="Name"
-                class="w-full h-10 mt-5 px-2"
+                class="border-b-2 border-gray-400 w-full h-10 mt-5 px-2"
               />
               <input
+                name="Email"
                 type="email"
                 placeholder="Email"
-                class="w-full h-10 mt-5 px-2"
+                class="border-b-2 border-gray-400 w-full h-10 mt-5 px-2"
               />
               <textarea
+                name="Message"
                 placeholder="Message"
-                class="w-full h-20 mt-5 px-2"
+                class="border-b-2 border-gray-400 w-full h-20 mt-5 px-2"
               ></textarea>
               <button
+                type="submit"
                 class="cursor-pointer w-50 h-10 mt-5 bg-gradient-to-r from-orange-400 via-white to-green-500 text-black font-bold rounded-2xl"
               >
                 Send
               </button>
             </form>
+
+            <p
+              id="sucess"
+              class="hidden mt-5 text-center text-lg font-semibold text-green-400"
+            >
+              Thanks for reaching out! Your message has been received. We'll get
+              back to you soon.
+            </p>
           </div>
         </div>
       </section>
