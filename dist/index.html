@@ -76,11 +76,36 @@
 
           <!-- mobile-nav-menu -->
           <div class="p-20 pt-10 text-3xl font-bold text-center">
-            <a href="#hero-section" class="block mt-8">Home</a>
-            <a href="#about-me-section" class="block mt-8">About me</a>
-            <a href="#skills-section" class="block mt-8">Skills</a>
-            <a href="#projects-section" class="block mt-8">Projects</a>
-            <a href="#contact-section" class="block mt-8">Contact</a>
+            <a
+              href="#hero-section"
+              class="block mt-8 active:underline underline-offset-4"
+              onclick="toggleNav()"
+              >Home</a
+            >
+            <a
+              href="#about-me-section"
+              class="block mt-8 active:underline underline-offset-4"
+              onclick="toggleNav()"
+              >About me</a
+            >
+            <a
+              href="#skills-section"
+              class="block mt-8 active:underline underline-offset-4"
+              onclick="toggleNav()"
+              >Skills</a
+            >
+            <a
+              href="#projects-section"
+              class="block mt-8 active:underline underline-offset-4"
+              onclick="toggleNav()"
+              >Projects</a
+            >
+            <a
+              href="#contact-section"
+              class="block mt-8 active:underline underline-offset-4"
+              onclick="toggleNav()"
+              >Contact</a
+            >
           </div>
         </div>
       </nav>
@@ -88,7 +113,7 @@
 
     <main>
       <!-- hero section -->
-      <section id="hero-section" class="flex js-show-on-scroll">
+      <section id="hero-section" class="flex">
         <!-- profile image -->
         <div class="hidden md:block w-21/50 flex-initial lg:h-svh">
           <img
@@ -98,7 +123,7 @@
           />
         </div>
         <!-- hero text -->
-        <div class="flex-1 lg:h-svh mt-30 lg:mt-10">
+        <div class="flex-1 h-screen lg:h-svh mt-70 md:mt-30 lg:mt-10">
           <p
             id="typewriter"
             class="text-1xl md:text-2xl font-semibold pt:30 md:pt-20 lg:pt-70 px-20"
@@ -116,7 +141,7 @@
       </section>
 
       <!-- about me section -->
-      <section id="about-me-section" class="mt-15 lg:mt-30 js-show-on-scroll">
+      <section id="about-me-section" class="mt-15 lg:mt-30">
         <h2
           class="px-10 text-2xl md:text-3xl lg:text-4xl font-bold underline underline-offset-4"
         >
@@ -148,7 +173,7 @@
       </section>
 
       <!-- skills section -->
-      <section id="skills-section" class="mt-15 lg:mt-30 js-show-on-scroll">
+      <section id="skills-section" class="mt-15 lg:mt-30">
         <h2
           class="px-10 text-2xl md:text-3xl lg:text-4xl font-bold underline underline-offset-4"
         >
@@ -192,7 +217,7 @@
       </section>
 
       <!-- projects-section -->
-      <section id="projects-section" class="mt-15 lg:mt-30 js-show-on-scroll">
+      <section id="projects-section" class="mt-15 lg:mt-30">
         <h2
           class="px-10 text-2xl md:text-3xl lg:text-4xl font-bold underline underline-offset-4"
         >
@@ -263,7 +288,7 @@
       </section>
 
       <!-- contact section -->
-      <section id="contact-section" class="mt-15 lg:mt-30 js-show-on-scroll">
+      <section id="contact-section" class="mt-15 lg:mt-30">
         <h2
           class="px-10 text-2xl md:text-3xl lg:text-4xl font-bold underline underline-offset-4"
         >
