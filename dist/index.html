@@ -230,7 +230,11 @@
           class="flex flex-col items-center gap-10 mt-10 md:mt-15 mx-10 p-5 bg-white text-black rounded-2xl"
         >
           <div class="flex-1">
-            <img src="./assets/projects/JScript.png" alt="JScript_img" />
+            <img
+              class="rounded-lg"
+              src="./assets/projects/JScript.png"
+              alt="JScript_img"
+            />
           </div>
           <div class="flex-2">
             <h3 class="text-2xl font-semibold">
@@ -332,12 +336,14 @@
               <input
                 name="Name"
                 type="text"
+                required
                 placeholder="Name"
                 class="border-b-2 border-gray-400 w-full h-10 mt-5 px-2"
               />
               <input
                 name="Email"
                 type="email"
+                required
                 placeholder="Email"
                 class="border-b-2 border-gray-400 w-full h-10 mt-5 px-2"
               />
@@ -347,6 +353,7 @@
                 class="border-b-2 border-gray-400 w-full h-20 mt-5 px-2"
               ></textarea>
               <button
+                id="submit_button"
                 type="submit"
                 class="cursor-pointer w-50 h-10 mt-5 bg-gradient-to-r from-orange-400 via-white to-green-500 text-black font-bold rounded-2xl"
               >

@@ -51,6 +51,7 @@ const form = document.forms["submit-to-google-sheet"];
 
 // Add event listener for form submission
 form.addEventListener("submit", (e) => {
+  document.getElementById("submit_button").innerHTML = "Sending...";
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
@@ -59,11 +60,14 @@ form.addEventListener("submit", (e) => {
       // Show success message and reset form
       setTimeout(() => {
         document.getElementById("sucess").style.display = "block";
+        document.getElementById("submit_button").innerHTML =
+          "Sent Successfully";
         setTimeout(() => {
           document.getElementById("sucess").style.display = "none";
+          document.getElementById("submit_button").innerHTML = "Send";
         }, 3000);
         form.reset();
-      }, 500);
+      }, 1000);
     })
     .catch((error) => console.error("Error!", error.message));
 });
