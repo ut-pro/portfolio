@@ -536,6 +536,9 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .m-2 {
+    margin: calc(var(--spacing) * 2);
+  }
   .m-auto {
     margin: auto;
   }
@@ -703,6 +706,9 @@
   }
   .scroll-smooth {
     scroll-behavior: smooth;
+  }
+  .rounded {
+    border-radius: 0.25rem;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
